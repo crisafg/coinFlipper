@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    html{
+        font-family: Ubuntu;
+    }
+}
+
+text{
+    @apply font-custom;
+}
+
+.coin{
+    transform-style: preserve-3d;
+} 
+.tails{
+    backface-visibility: hidden;
+    transform: rotateX(180deg);
+    top: 8px;
+}
+
+
+@keyframes tailsFlip{
+    0%{
+        transform: rotateX(60deg);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes headsFlip{
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
+}
+
+

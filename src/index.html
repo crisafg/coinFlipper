@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flip a coin</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+  </head>
+  <body
+    class="bg-gradient-to-r from-cyan-300 to-slate-300 bg-fixed font-custom"
+  >
+    <h1
+      class="text-center text-4xl uppercase relative top-24 font-custom leading-4"
+    >
+      Coin Flipper
+    </h1>
+    <main
+      class="container bg-white p-4 w-96 h-80 mx-auto my-auto mt-40 rounded shadow-lg shadow-stone-900"
+    >
+      <section class="stats text-right text-xl font-medium">
+        <p id="countCara">Heads: 0</p>
+        <p id="countCruz">Tails: 0</p>
+      </section>
+      <section class="coin w-40 h-40 -mt-1 mx-auto">
+        <div class="heads absolute w-40 h-40">
+          <img src="/img/heads.png" alt="heads" />
+        </div>
+        <div class="tails absolute w-40 h-40">
+          <img src="/img/tails.png" alt="tails" />
+        </div>
+      </section>
+
+      <div class="flex justify-between mt-4">
+        <button
+          class="btn font-bold p-3 bg-cyan-400 shadow rounded-lg hover:bg-cyan-300"
+        >
+          Flip a coin
+        </button>
+        <button
+          class="reset font-bold p-3 bg-cyan-400 shadow rounded-lg hover:bg-cyan-300"
+        >
+          Reset
+        </button>
+      </div>
+    </main>
+  </body>
+  <script src="/src/script.js"></script>
+</html>
